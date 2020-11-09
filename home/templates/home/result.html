@@ -1,0 +1,11 @@
+{% extends 'home/layout.html' %}
+{% block body %}
+    <h1>Currency Convertor</h1>
+    <hr>
+    {% if date %}
+        <h2>{{amount}} {{base}} is equal to {{final}} {{other}} at {{date}}</h2>
+    {% else %}
+        <h2>{{amount}} {{base}} is equal to {{final}} {{other}}</h2>
+    {% endif %}
+    <a href="{% url 'index' %}">Check for a different Currency</a>
+{% endblock %}

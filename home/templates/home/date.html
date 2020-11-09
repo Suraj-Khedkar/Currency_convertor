@@ -1,0 +1,104 @@
+{% extends 'home/layout.html' %}
+{% block head %}
+    <style>
+        form{
+            border: 2ch;
+            padding: 5ch;
+        }
+    </style>
+{% endblock %}
+{% block body %}
+    <h1>Currency Convertor</h1>
+    <hr>
+    <form action="{% url 'dateconvert' %}" method="POST">
+        {% csrf_token %}
+        <div>
+            Enter the Amount: 
+            <input type="number" placeholder="Amount" name='amount'>
+        </div>
+        <br>
+        <div class="dropdown">
+            From : 
+            <input list="fromCurrency" name='fromCurrency'>
+            <datalist id="fromCurrency" >
+                <option value="USD">
+                <option value="JPY">
+                <option value="BGN">
+                <option value="CZK">
+                <option value="DKK">
+                <option value="GBP">
+                <option value="HUF">
+                <option value="PLN">
+                <option value="RON">
+                <option value="SEK">
+                <option value="CHF">
+                <option value="ISK">
+                <option value="NOK">
+                <option value="HRK">
+                <option value="RUB">
+                <option value="TRY">
+                <option value="AUD">
+                <option value="BRL">
+                <option value="CAD">
+                <option value="CNY">
+                <option value="HKD">
+                <option value="IDR">
+                <option value="ILS">
+                <option value="INR">
+                <option value="KRW">
+                <option value="MXN">
+                <option value="MYR">
+                <option value="NZD">
+                <option value="PHP">
+                <option value="SGD">
+                <option value="THB">
+                <option value="ZAR">
+            </datalist>
+        </div>
+        <br>
+        <div class="dropdown">
+            To : 
+            <input list="toCurrency" name="toCurrency">
+            <datalist id="toCurrency" >
+                <option value="USD">
+                <option value="JPY">
+                <option value="BGN">
+                <option value="CZK">
+                <option value="DKK">
+                <option value="GBP">
+                <option value="HUF">
+                <option value="PLN">
+                <option value="RON">
+                <option value="SEK">
+                <option value="CHF">
+                <option value="ISK">
+                <option value="NOK">
+                <option value="HRK">
+                <option value="RUB">
+                <option value="TRY">
+                <option value="AUD">
+                <option value="BRL">
+                <option value="CAD">
+                <option value="CNY">
+                <option value="HKD">
+                <option value="IDR">
+                <option value="ILS">
+                <option value="INR">
+                <option value="KRW">
+                <option value="MXN">
+                <option value="MYR">
+                <option value="NZD">
+                <option value="PHP">
+                <option value="SGD">
+                <option value="THB">
+                <option value="ZAR">
+            </datalist>
+        </div><br>
+        <div>
+            Date:
+            <input type="date" placeholder="YYYY-MM-DD" name="date">
+        </div>
+        <br>
+        <input type="submit" placeholder="Get Exchange rate">
+    </form>
+{% endblock %}
