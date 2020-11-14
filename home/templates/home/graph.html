@@ -44,7 +44,7 @@
     </style>
 {% endblock %}
 {% block body %}
-    <form action="{% url 'dateconvert' %}" method="POST">
+    <form action="{% url 'graph' %}" method="POST">
         {% csrf_token %}
         <div style="width:400px; margin:0 auto;">
             <div style=" color: hsl(0, 0%, 100%);" class="dropdown">
@@ -73,7 +73,6 @@
                     <option value="CAD">
                     <option value="CNY">
                     <option value="HKD">
-                    <option value="IDR">
                     <option value="ILS">
                     <option value="INR">
                     <option value="KRW">
@@ -113,7 +112,6 @@
                     <option value="CAD">
                     <option value="CNY">
                     <option value="HKD">
-                    <option value="IDR">
                     <option value="ILS">
                     <option value="INR">
                     <option value="KRW">

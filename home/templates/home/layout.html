@@ -7,11 +7,49 @@
         
         <style>
             body{
-                text-align: center;
+                
+                font-family: Arial, Helvetica, sans-serif;
+                background-image: url(https://i.imgur.com/DTarZ2w.jpg);
+            }
+            a.button {
+              -webkit-appearance: button;
+              -moz-appearance: button;
+              text-align: center;
+              appearance: button;
+              font-weight: bold;
+              font-style: italic;
+              text-decoration: none;
+              color: initial;
             }
         </style>
     </head>
     <body>
+        <h1 style=" color: whitesmoke; text-align: center;">Currency Converter</h1>
+
+        <p style="text-align: center;">
+            <a href="{% url 'index' %} " class="Button" style="color: white;">Home &#8287 &#8287 &#8287 &#8287</a>
+            <a href="{% url 'dateconvert' %}" class="Button" style="color: white;">Convert By Date &#8287 &#8287 &#8287 &#8287</a>
+            <a href="{% url 'graph' %}" class="Button" style="color: white;">Graph &#8287 &#8287</a>
+        </p>
+
+        <hr color="white" size="3px" width="600px">
+        <br>
         {% block body %} {% endblock %}
+        <footer style=" bottom: 5; width: 99%;">
+        
+            <hr color="black" >
+        
+            <p style="text-align: right; margin-right: 20px;">
+
+                <img src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" height="20" width="20">
+                <a class="Button" href="https://github.com/star-coder/Currency_convertor" style="font-size: 20;">GitHub</a>
+
+                &#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287
+
+                <a href="www.iiitn.ac.in" class="Button"><img src="https://iiitn.ac.in/images/main-logo-90x90.png" height="40" width="40"></a>
+    
+            </p>
+
+        </footer>
     </body>
 </html>
