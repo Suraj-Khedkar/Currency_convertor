@@ -25,7 +25,8 @@ SECRET_KEY = 'u5+c&g_p&s=s2c#j_%vekc+2u_lna$hnk_wuk5c^di&_pk&omk'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ccproject20.herokuapp.com/','localhost',
+'127.0.0.1']
 
 
 # Application definition
