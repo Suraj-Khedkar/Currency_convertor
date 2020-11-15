@@ -10,9 +10,9 @@
 	import django_heroku
 	# Activate Django-Heroku.
 	django_heroku.settings(locals())
-### and change
+### and change this
 	DEBUG = False
-### to
+### to this
         DEBUG = True
 ### 3.Install all the requirements for the project :
     pip install -r requirements.txt
