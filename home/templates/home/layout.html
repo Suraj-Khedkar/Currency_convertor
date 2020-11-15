@@ -31,25 +31,23 @@
             <a href="{% url 'dateconvert' %}" class="Button" style="color: white;">Convert By Date &#8287 &#8287 &#8287 &#8287</a>
             <a href="{% url 'graph' %}" class="Button" style="color: white;">Graph &#8287 &#8287</a>
         </p>
-
         <hr color="white" size="3px" width="600px">
         <br>
         {% block body %} {% endblock %}
         <footer style=" bottom: 5; width: 99%;">
-        
+            <a id='rates' class='button' href="{% url 'rates' %}">Rates</a>
             <hr color="black" >
-        
-            <p style="text-align: right; margin-right: 20px;">
-
+            
+            <div style="text-align: right; margin-right: 20px;">
+                
                 <img src="https://www.flaticon.com/svg/static/icons/svg/25/25231.svg" height="20" width="20">
                 <a class="Button" href="https://github.com/star-coder/Currency_convertor" style="font-size: 20;">GitHub</a>
 
                 &#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287&#8287
 
-                <a href="www.iiitn.ac.in" class="Button"><img src="https://iiitn.ac.in/images/main-logo-90x90.png" height="40" width="40"></a>
-    
-            </p>
-
+                <a href="https://www.iiitn.ac.in" class="Button"><img src="https://iiitn.ac.in/images/main-logo-90x90.png" height="40" width="40"></a>
+                
+            </div>
         </footer>
     </body>
 </html>
