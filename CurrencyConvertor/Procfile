@@ -1,1 +1,1 @@
-web: gunicorn currency_convertor.wsgi
+web: gunicorn currency_convertor.wsgi --log-file -
