@@ -13,7 +13,7 @@
 ### and change this
 	DEBUG = False
 ### to this
-        DEBUG = True
+	DEBUG = True
 ### 3.Install all the requirements for the project :
     pip install -r requirements.txt
 ### 4.Move inside the code directory and run command :
