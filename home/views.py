@@ -4,6 +4,7 @@ from matplotlib import pyplot as plt
 import io
 import urllib,base64
 import pandas as pd
+
 # Create your views here.
 def index(request):
     base_url = "https://api.exchangeratesapi.io/latest"
@@ -12,6 +13,7 @@ def index(request):
         raise Exception("ERROR: API request unsuccessful.")
     data = dict(res.json())
     df = pd.DataFrame(data=data)
+    print(df)
     rates=df.to_html()
     text_file = open("home/templates/home/rates.html", "w")
     text_file.write(rates)

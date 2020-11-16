@@ -1,7 +1,7 @@
 {% extends 'home/layout.html' %}
 {% block head %}
     <style>
-        input[type=text], select {  
+        input[type=text], .select {  
               width: 100%;
               padding: 5%;
               margin: 10px;
@@ -130,7 +130,7 @@
             <div style="color: hsl(0, 0%, 100%);" class="input">
                 Enter The Amount 
                 <br><hr color="white">
-                <input style="font-size: large; text-align: center; height: 50px;" type="number" placeholder="Amount" name="amount">
+                <input style="font-size: large; text-align: center; height: 50px;" type="number" step="0.01" placeholder="Amount" name="amount">
             </div>
         </div> 
             <br>
