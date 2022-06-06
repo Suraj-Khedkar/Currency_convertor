@@ -18,3 +18,5 @@
     pip install -r requirements.txt
 ### 4.Move inside the code directory and run command :
 	python manage.py runserver
+## Documentation of project(with output images)
+https://drive.google.com/file/d/11lh7Q8qwKEVT34m6Gfd8TGuZjeMbZ50Z/view?usp=sharing
