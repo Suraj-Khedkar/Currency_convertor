@@ -18,11 +18,11 @@ https://currency-c.herokuapp.com/
 	import os
 	import django_heroku
 	# Activate Django-Heroku.
-	django_heroku.settings(locals())```
->and change this
->	```DEBUG = False```
->to this
->	```DEBUG = True```
+	django_heroku.settings(locals())
+ and change this
+  ```DEBUG = False```
+  to this
+  ```DEBUG = True```
 - Install all the requirements for the project :
 	```pip install -r requirements.txt```
 - Move inside the code directory and run command :
